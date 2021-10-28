@@ -48,7 +48,15 @@ body {
 }
 
 @media screen and (max-width: 886px){
-    .search-bar-input {
+    .search-bar-input  {
         width: 100%!important;
+        
     }   
+}
+@media screen and (max-width: 600px){
+    .search-bar-input  {
+        width: 100%!important;
+        
+    }   
+  
 }
