@@ -2,6 +2,16 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.btn:focus {
+    outline-style: solid;
+    border-color: 0.5px gray!important;
+}
+
+.btn:hover {
+    outline-style: solid;
+    border-color: 0.5px gray!important;
+}
+
 .form-inline .form-control {
     display: inline-block;
     width: auto;
