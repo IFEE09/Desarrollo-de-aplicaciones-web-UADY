@@ -2,23 +2,33 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.search-bar {
-    margin-top: 1rem;
-    margin-left: 0.5rem;
-    margin-right: 1.5rem;
-}   
-
-.search-bar-input {
-    width: 350px!important;
-}
-
-.search-button {
-    margin-left: 0.5rem;
-}
-
 .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
 }
+
+.navbar-toggler {
+    margin: 0.5rem;
+}
+
+.search-bar {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}   
+
+.search-bar-input {
+    width: 20em!important;
+}
+
+.search-button {
+    margin-left: 0.5rem;
+    margin-top: 1rem!important;
+}
   
+@media screen and (max-width: 886px){
+    .search-bar-input {
+        width: 100%!important;
+    }   
+}
