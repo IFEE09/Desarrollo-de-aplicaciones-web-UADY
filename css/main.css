@@ -23,8 +23,21 @@ body {
 }
 
 .search-button {
-    margin-left: 0.5rem;
-    margin-top: 1rem!important;
+    padding: 0.6rem;
+    margin-left: -0.3rem;
+    margin-top: 1.02rem!important;
+    background-color: white;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color:rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    color: white;
+    border:2px solid rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+}
+
+.search-button:selected {
+    outline-color:2px solid rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
 }
   
 @media screen and (max-width: 886px){
