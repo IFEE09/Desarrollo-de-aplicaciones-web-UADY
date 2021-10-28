@@ -2,10 +2,22 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+footer {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
 .form-inline .form-control {
     display: inline-block;
     width: auto;
     vertical-align: middle;
+}
+
+.login-link {
+    visibility: hidden;
 }
 
 .navbar-toggler {
@@ -14,7 +26,7 @@ body {
 
 .search-bar {
     margin-top: 1rem;
-    margin-right: 0.5rem;
+    margin-right: -5rem;
 }   
 
 .search-bar-input {
@@ -68,17 +80,98 @@ body {
     background-color: rgb(66, 214, 8);
 }
 
+.btn-offers:focus {
+    background-color: rgb(75, 172, 37);
+}
+
+.footer-link i {
+    vertical-align: -0.09em;
+}
+
+.footer-link {
+    color: gray;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-items {
+    display: inline-block;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.copy {
+    color: gray;
+}
+
+.newsletter {
+    width: 15rem;
+    height: 2.1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.newsletter-button {
+    background-color: rgb(75, 172, 37);
+    height: 2.1rem;
+    border: none;
+    margin-left: 0.1rem;
+    margin-top: -0.2rem;
+}
+
+.newsletter-text {
+    color: gray;
+}
+
+.newsletter-button:hover {
+    background-color: rgb(66, 214, 8);
+    border: none;
+}
+
+.newsletter-button:focus {
+    background-color: rgb(75, 172, 37);
+}
+
+@media screen and (max-width: 980px) {
+    .hidden-980 {
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width: 886px){
     .search-bar-input  {
-        width: 50%!important;
-        display: inline-block;
+        width: 75vw!important;
         margin-right: 0px;
     } 
     .search-button {
         display: inline-block;   
     }
 
-    form .d-flex {
-        width: 50%;
+    .search-bar{
+        margin-right: 0rem;
     }
+
+    .search-bar a {
+        visibility: hidden;
+    }
+
+    .login-link {
+        visibility: visible;
+    }
+
+    .footer-items {
+        display: inherit;
+    }
+
 }
+
