@@ -14,7 +14,6 @@ body {
 
 .search-bar {
     margin-top: 1rem;
-    margin-left: 0.5rem;
     margin-right: 0.5rem;
 }   
 
@@ -23,9 +22,7 @@ body {
 }
 
 .search-button {
-    padding: 0.6rem;
-    margin-left: -0.3rem;
-    margin-top: 1.02rem!important;
+    margin-left: 0.5rem!important;
     background-color: white;
 }
 .search-button::selection {
@@ -39,9 +36,9 @@ body {
     cursor: pointer;
     background-color:rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
     color: white;
-    border:2px solid rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
-   
+    border:2px solid rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;  
 }
+
 .btn:focus {
     outline:none ;
     box-shadow: none;
@@ -49,14 +46,15 @@ body {
 
 @media screen and (max-width: 886px){
     .search-bar-input  {
-        width: 100%!important;
-        
-    }   
-}
-@media screen and (max-width: 600px){
-    .search-bar-input  {
-        width: 100%!important;
-        
-    }   
-  
+        width: 50%!important;
+        display: inline-block;
+        margin-right: 0px;
+    } 
+    .search-button {
+        display: inline-block;   
+    }
+
+    form .d-flex {
+        width: 50%;
+    }
 }
