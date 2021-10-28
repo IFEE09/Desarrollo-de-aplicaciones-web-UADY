@@ -44,6 +44,30 @@ body {
     box-shadow: none;
 }
 
+.offers-title {
+    margin: auto;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.cards-div {
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    margin: 10px;
+}
+
+.btn-offers {
+    background-color: rgb(75, 172, 37);
+    border: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))
+}
+
+.btn-offers:hover {
+    background-color: rgb(66, 214, 8);
+}
+
 @media screen and (max-width: 886px){
     .search-bar-input  {
         width: 50%!important;
