@@ -48,16 +48,19 @@
             
             <ul class="navbar-nav mx-auto">
                 <li class="search-bar">
-                    <form class="formgit" action="">
-                        <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
+                    <form class="d-flex" action="">
+                        <!-- el input-group es el que le da la propioedad de inlineblock -->
+                        <div class="input-group"> 
+                            <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
+                            <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
+                        </div>
                     </form>
                 </li>
-                <li>
-                    <button class="btn my-sm-0 search-button " data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
-                </li>
             </ul>
+
         </div>
       </div>
+
     </nav>
       </header>
 
@@ -90,6 +93,12 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Siguiente</span>
         </button>
+      </div>
+
+      <!-- offers -->
+
+      <div>
+
       </div>
     
 </body>
