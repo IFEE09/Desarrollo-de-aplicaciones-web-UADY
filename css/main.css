@@ -2,6 +2,23 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.logotipo-navbar {
-    width: 7rem;
+.search-bar {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 1.5rem;
+}   
+
+.search-bar-input {
+    width: 350px!important;
 }
+
+.search-button {
+    margin-left: 0.5rem;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+  
