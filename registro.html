@@ -36,8 +36,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/categorias.html">Categorías</a>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categorías</a>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item" href="#">Perecederos y Materias Primas</a></li>
+                                <li><a class="dropdown-item" href="#">Ropa y Calzado</a></li>
+                                <li><a class="dropdown-item" href="#">Otros</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a class="nav-link" href="./registro.html">Regístrate</a>
@@ -95,6 +100,18 @@
                     </div>
                     <div class="mb-4">
                         <input type="text" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat">
+                    </div>
+                    <div class="alert alert-success alert-dismissible ocultar" id="ok" role="alert">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>¡Excelente!</strong> Tu registro sea realizado exitosamente.
+                    </div>
+                    <div class="alert alert-danger alert-dismissible ocultar">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>¡Oh No!</strong> Las contraseñas no coinciden. <br> Intente nuevamente.
+                    </div>
+                    <div class="alert alert-warning alert-dismissible ocultar">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        <strong>¡Espera!</strong> Debes de aceptar Nuestros <a class="terms" href="">Términos y condiciones</a> para continuar.
                     </div>
                     <div class="mb-4 form-check">
                         <input type="checkbox" name="connected" class="form-check-input">
