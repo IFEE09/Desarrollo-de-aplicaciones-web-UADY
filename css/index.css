@@ -7,7 +7,7 @@ footer {
     text-align: center;
     margin-bottom: 0px;
     padding: 0.5rem;
-    margin-top: 2rem;
+    padding-top: 1.5rem;
     margin-bottom: 0rem!important;  
 }
 
@@ -175,9 +175,22 @@ input[type="text"]:focus {
     font-size: 18px;
 }
 
+.carrito-title {
+    margin: 1.5rem;
+}
+
 #fondo-nosotros {
     height: 100vh;
     background-image: url(/Img/backgrounds/nosotros-fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+}
+
+#fondo-aviso-privacidad {
+    height: 100vh;
+    background-image: url(/Img/backgrounds/aviso-privacidad-fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
