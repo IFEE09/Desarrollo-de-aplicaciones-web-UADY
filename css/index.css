@@ -209,7 +209,11 @@ input[type="text"]:focus {
     #fondo-nosotros {
         height: 100vw;
         overflow: scroll;
-        
+    }
+
+    #fondo-aviso-privacidad {
+        height: 100vw;
+        overflow: scroll;
     }
 
     .flex-center h1 {
