@@ -16,16 +16,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="icon" href="./Img/icon/icon.png">
-    <link rel="stylesheet" href="./css/registro.css">
-
-    <title>Registro</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Nosotros</title>
 </head>
 
 <body>
-
     <!-- Navigation bar -->
     <header class="header">
-
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <a href="./index.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
@@ -37,27 +34,29 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Inicio</a>
+                            <a class="nav-link active" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categorías</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./categorias-perecederos-materias-primas.html">Perecederos y Materias Primas</a></li>
-                                <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a></li>
+                            <ul class="dropdown-menu ">
+                                <li><a class="dropdown-item"
+                                        href="./categorias-perecederos-materias-primas.html">Perecederos y Materias
+                                        Primas</a></li>
+                                <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a>
+                                </li>
                                 <li><a class="dropdown-item" href="./categorias-otros.html">Otros</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="nav-link active" href="./registro.html">Regístrate</a>
+                            <a class="nav-link " href="/registro.html">Regístrate</a>
                         </li>
                         <li>
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav-link login-link" href="./login.html">Inicia sesión</a>
+                            <a class="nav-link login-link" href="/login.html">Inicia sesión</a>
                         </li>
                     </ul>
 
@@ -72,7 +71,7 @@
                                             class="fas fa-search"></i></button>
                                     <button class="btn my-sm-0 cart-button"><i
                                             class="fas fa-shopping-cart"></i></button>
-                                    <a class="nav-link hidden-980" href="./login.html">Inicia sesión</a>
+                                    <a class="nav-link hidden-980" href="/login.html">Inicia sesión</a>
                                 </div>
                             </form>
                         </li>
@@ -82,49 +81,10 @@
         </nav>
     </header>
 
-    <!-- login -->
-    <div class="container mt-4 mb-4 shadow login-box-primary">
-        <div class="row align-items-stretch">
-            <!-- <div class="col login-img d-none d-lg-block col-md-5 col-lg-5 col-xl-6 login rounded
-            ">
-            </div> -->
-            <div class="col">
-                <div class="text-center login-title">
-                    <i class="fas fa-user-plus"></i>
-                    <h2 class="fw-bold py-5 text-center">Registro</h2>
-                </div>
-                <!-- login -->
-                <form action="#">
-                    <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Nombre(s)" name="name" required>
-                    </div>
-                    <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Apellido(s)" name="last-name" required>
-                    </div>
-                    <div class="mb-4">
-                        <input type="email" class="form-control" placeholder="Correo" name="email" required>
-                    </div>
-                    <div class="mb-4">
-                        <input type="password" class="form-control" placeholder="Contraseña" name="password-register" required>
-                    </div>
-                    <div class="mb-4">
-                        <input type="password" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat" required>
-                    </div>
-
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input" required>
-                        <label for="connected" class="form-check-label">Al registrarme acepto los términos y condiciones</label>
-                        <a class="terms" href="">Ver términos y condiciones</a>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-login" >Registrate</button>
-                    </div>
-                    <div class="my-3 mx-10 text-center">
-                        <p>o</p>
-                        <a class="register" href="./login.html">Inicia sesión</a><br>
-                    </div>
-                </form>
-            </div>
+    <div>
+        <div id="fondo-nosotros">
+            <h1 class="nosotros-title">Nosotros</h1>
+            <p class="nosotros-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolorem ratione doloremque possi Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam Lorem ipsum dolor sit amet consectetur</p>
         </div>
     </div>
 
@@ -144,7 +104,8 @@
                             class="fas fa-user-secret"></i></a>
                 </li>
                 <li class="footer-items">
-                    <a class="footer-link" href="./registro.html">Regístrate&nbsp;&nbsp;<i class="fas fa-user-plus"></i></a>
+                    <a class="footer-link" href="./registro.html">Regístrate&nbsp;&nbsp;<i
+                            class="fas fa-user-plus"></i></a>
                 </li>
             </ul>
         </div>
@@ -152,12 +113,12 @@
             <span class="newsletter-text newsletter-item">Recibe las noticias más recientes de Mercados
                 México&nbsp;</span>
             <input class="newsletter newsletter-item" type="text" placeholder="Ingresar correo">
-            <button class="btn btn-primary newsletter-button newsletter-item">Suscribirse</button>
+            <button class="btn btn-primary newsletter-button newsletter-item">suscribirse</button>
         </div>
         <div class="copy">
             <p>Todos los derechos reservados por Mercados México &copy; 2021-2022</p>
         </div>
     </footer>
 </body>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </html>

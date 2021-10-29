@@ -247,11 +247,20 @@ input[type="checkbox"]:focus {
 
 @media screen and (max-width: 886px){
     .search-bar-input  {
-        width: 75vw!important;
+        width: 30vw!important;
         margin-right: 0px;
     } 
     .search-button {
-        display: inline-block;   
+        display: inline-block;
+        margin-top: 0.4rem!important;
+        margin-left: 0.2rem!important;
+        margin-right: 0.5rem;
+    }
+
+    .cart-button {
+        display: inline-block;
+        margin-top: 0.4rem!important;
+        margin-left: -0.2rem!important;
     }
 
     .search-bar{
@@ -273,6 +282,16 @@ input[type="checkbox"]:focus {
     .login-box-primary {
         width: 50%;
     }
+
+    .search-bar-input::-webkit-input-placeholder {
+        visibility: hidden;
+    }
+
+    .login-box-primary {
+        padding: 15px;
+    }
+
+
 
 }
 
