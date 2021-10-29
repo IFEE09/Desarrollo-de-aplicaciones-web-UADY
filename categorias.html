@@ -48,12 +48,13 @@
             
             <ul class="navbar-nav mx-auto">
                 <li class="search-bar">
-                    <form class="formgit" action="">
-                        <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
+                    <form class="d-flex" action="">
+                        <!-- el input-group es el que le da la propioedad de inlineblock -->
+                        <div class="input-group"> 
+                            <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
+                            <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
+                        </div>
                     </form>
-                </li>
-                <li>
-                    <button class="btn my-sm-0 search-button " data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
                 </li>
             </ul>
         </div>
@@ -65,8 +66,13 @@
           <h1>Categorias</h1>
           <div class="store-wrapper">
               <div class="category_list">
-                    <a href="#"></a>
-              </div>
+                <div class="container-sm">
+                 
+                    <button type="button" class="btn btn-outline-dark  btn-lg">Todo</button>
+                    <button type="button" class="btn btn-outline-dark  btn-lg">Perecederos y Materias Primas</button>
+                    <button type="button" class="btn btn-outline-dark  btn-lg">Ropa Y Calzado</button>     
+                    <button type="button" class="btn btn-outline-dark  btn-lg">Otros</button>
+                  </div>
               <section class="products-list">
 
               </section>
