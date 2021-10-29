@@ -203,8 +203,13 @@ footer {
     }
 
     .login-box-primary {
-        width: 80%;
+        width: 50%;
     }
 
 }
 
+@media screen and (max-width: 500px){
+    .login-box-primary {
+        width: 80%;
+    }
+}
