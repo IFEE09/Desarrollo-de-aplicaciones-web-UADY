@@ -1,0 +1,181 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0.5rem;
+    margin-top: 0rem;
+}
+
+.login-title {
+    margin-top: 4rem;
+}
+
+.login-title h3 {
+    font-weight: bold;
+    color: white;
+}
+
+.login-title h2 {
+    color: white;
+}
+
+.login-box-primary {
+    border-radius: 30px;
+    background: linear-gradient(to top, rgb(75, 172, 37) , rgb(168, 165, 7));
+    width: 25%;
+    padding: 2vw;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+
+.login-link {
+    visibility: hidden;
+}
+
+.navbar-toggler {
+    margin: 0.5rem;
+}
+
+.search-bar {
+    margin-top: 1rem;
+    margin-right: -5rem;
+}   
+
+.search-bar-input {
+    width: 20em!important;
+}
+
+.search-button {
+    margin-left: 0.5rem!important;
+    background-color: white;
+}
+.search-button::selection {
+    padding: 0.6rem;
+    margin-left: -0.3rem;
+    margin-top: 1.02rem!important;
+    background-color: white;
+}
+
+.search-button:hover {
+    cursor: pointer;
+    background-color:rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
+    color: white;
+    border:2px solid rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;  
+}
+
+.btn:focus {
+    outline:none ;
+    box-shadow: none;
+}
+
+.footer-link i {
+    vertical-align: -0.09em;
+}
+
+.footer-link {
+    color: gray;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-items {
+    display: inline-block;
+}
+
+.footer-link {
+    text-decoration: none;
+    margin: 0.5rem;
+}
+
+.copy {
+    color: gray;
+}
+
+.newsletter {
+    width: 15rem;
+    height: 2.1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.newsletter::-webkit-input-placeholder {
+    text-align: center;
+    line-height: 2rem;
+}
+
+.newsletter-button {
+    background-color: rgb(75, 172, 37);
+    height: 2.1rem;
+    border: none;
+    margin-left: 0.1rem;
+    margin-top: -0.2rem;
+}
+
+.newsletter-text {
+    color: gray;
+}
+
+.newsletter-button:hover {
+    background-color: rgb(66, 214, 8);
+    border: none;
+}
+
+.newsletter-button:focus {
+    background-color: rgb(75, 172, 37);
+}
+
+@media screen and (max-width: 980px) {
+    .hidden-980 {
+        visibility: hidden;
+    }
+
+    .login-box-primary {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 886px){
+    .search-bar-input  {
+        width: 75vw!important;
+        margin-right: 0px;
+    } 
+    .search-button {
+        display: inline-block;   
+    }
+
+    .search-bar{
+        margin-right: 0rem;
+    }
+
+    .search-bar a {
+        visibility: hidden;
+    }
+
+    .login-link {
+        visibility: visible;
+    }
+
+    .footer-items {
+        display: inherit;
+    }
+
+    .login-box-primary {
+        width: 80%;
+    }
+
+}
+
