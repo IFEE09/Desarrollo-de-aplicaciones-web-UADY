@@ -13,66 +13,89 @@
     <link rel="icon" href="./Img/icon/icon.png">
     <link rel="stylesheet" href="./css/main.css">
     
-    <title>Ropa y calzado</title>
+    <title>Mercados México</title>
 </head>
 <body>
-    
+
     <!-- Navigation bar -->
     <header class="header">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
-        <div class="container-fluid">
-        <a href="./index.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
 
-        <!-- Collapsed button responsive -->
-        <!-- FALTA ARREGLAR ESTE BOTON, PARA QUE CUANDO LE DES CLICK DESPLIEGUE LAS OPCIONES 
-            TAMBIEN HAY QUE ARREGLAR QUE CUANDOS DES CLICK LA PSEUDOCLASE NO PONGA EL OUTLINE COLOR O BORDER BLANCO, QUE SEA UN GRIS MAS ESTETICO!!! -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link " href="./index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Categorías</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">Regístrate</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+            <div class="container-fluid">
+                <a href="./index.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
+
+                <!-- Collapsed button responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+                </button>
             
-            <ul class="navbar-nav mx-auto">
-                <li class="search-bar">
-                    <form class="formgit" action="">
-                        <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
-                    </form>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav mx-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/categorias.html">Categorías</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="./registro.html">Regístrate</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="nav-link login-link" href="./login.html">Inicia sesión</a>
+                        </li>
+                    </ul>
+                
+                    <ul class="navbar-nav mx-auto">
+                        <li class="search-bar">
+
+                            <form class="d-flex" action="">
+                                <!-- el input-group es el que le da la propioedad de inlineblock -->
+                                <div class="input-group"> 
+                                    <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
+                                    <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
+                                    <a class="nav-link hidden-980" href="./login.html">Inicia sesión</a>
+                                </div>
+                        </form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+
+      <!-- footer part -->
+      <footer class="bg-dark">
+          <div>
+            <ul>
+                <li class="footer-items">
+                    <a href="" class="footer-link">Acerca de nosotros&nbsp;&nbsp;<i class="fas fa-user-tie"></i></a>
                 </li>
-                <li>
-                    <button class="btn my-sm-0 search-button " data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
+                <li class="footer-items">
+                    <a href="mailto:info@mercadosmexico.mx" class="footer-link" >Envíanos un correo &nbsp;<i class="far fa-envelope"></i></a>
+                </li>
+                <li class="footer-items">
+                    <a class="footer-link adjust" href="">Aviso de privacidad&nbsp;&nbsp;<i class="fas fa-user-secret"></i></a>
+                </li>
+                <li class="footer-items">
+                    <a class="footer-link" href="">Regístrate&nbsp;&nbsp;<i class="fas fa-user-plus"></i></a>
                 </li>
             </ul>
-        </div>
-      </div>
-    </nav>
-      </header>
-
-
-      <div class="wrap">
-          <h1>Categorias</h1>
-          <div class="store-wrapper">
-              <div class="category_list">
-                    <a href="#"></a>
-              </div>
-              <section class="products-list">
-
-              </section>
           </div>
-      </div>
-
+          <div >
+              <span class="newsletter-text newsletter-item">Recibe las noticias más recientes de Mercados México&nbsp;</span>
+              <input class="newsletter newsletter-item" type="text" placeholder="Ingresar correo">
+              <button class="btn btn-primary newsletter-button newsletter-item">suscribirse</button>
+          </div>
+          <div class="copy">
+              <p>Todos los derechos reservados por Mercados México &copy; 2021-2022</p>
+          </div>
+      </footer>
 </body>
 </html>
