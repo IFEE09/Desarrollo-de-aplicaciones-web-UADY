@@ -40,13 +40,13 @@
                             <a class="nav-link" href="/categorias.html">Categorías</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="#">Regístrate</a>
+                            <a class="nav-link" href="./registro.html">Regístrate</a>
                         </li>
                         <li>
                             <a class="nav-link" href="#">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav-link login-link active" href="#">Inicia sesión</a>
+                            <a class="nav-link login-link active" href="./login.html">Inicia sesión</a>
                         </li>
                     </ul>
                 
@@ -58,7 +58,7 @@
                                 <div class="input-group"> 
                                     <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
                                     <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
-                                    <a class="nav-link hidden-980 active" href="">Inicia sesión</a>
+                                    <a class="nav-link hidden-980 active" href="./login.html">Inicia sesión</a>
                                 </div>
                         </form>
                         </li>
@@ -82,14 +82,24 @@
                 <!-- login -->
                 <form action="#">
                     <div class="mb-4">
+                        <input type="text" class="form-control" placeholder="Nombre(s)" name="name">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" placeholder="Apellido(s)" name="last-name">
+                    </div>
+                    <div class="mb-4">
                         <input type="text" class="form-control" placeholder="Correo" name="email">
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Contraseña" name="password">
+                        <input type="text" class="form-control" placeholder="Contraseña" name="password-register">
+                    </div>
+                    <div class="mb-4">
+                        <input type="text" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat">
                     </div>
                     <div class="mb-4 form-check">
                         <input type="checkbox" name="connected" class="form-check-input">
                         <label for="connected" class="form-check-label">Al registrarme acepto los términos y condiciones</label>
+                        <a class="terms" href="">Ver términos y condiciones</a>
                     </div>
                     <div class="d-grid">
                         <button type="submit" class="btn btn-login">Registrate</button>
@@ -124,7 +134,7 @@
           <div >
               <span class="newsletter-text newsletter-item">Recibe las noticias más recientes de Mercados México&nbsp;</span>
               <input class="newsletter newsletter-item" type="text" placeholder="Ingresar correo">
-              <button class="btn btn-primary newsletter-button newsletter-item">suscribirse</button>
+              <button class="btn btn-primary newsletter-button newsletter-item">Suscribirse</button>
           </div>
           <div class="copy">
               <p>Todos los derechos reservados por Mercados México &copy; 2021-2022</p>
