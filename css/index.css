@@ -44,7 +44,7 @@ input[type="text"]:focus {
 
 .search-button {
     margin-left: 0.5rem!important;
-    background-color: white;
+    background-color: white; 
     border-radius: 10px!important;
 }
 
