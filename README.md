@@ -4,6 +4,8 @@ Proyecto Final: Una tienda en linea para productores y artesanos de México
 
 Repositorio principal de la materia de Desarrollo de Aplicaciones Web
 
+Sitio de prueba para el proyecto: http://nulleaks.com/ (sin certificado SSL)
+
 # Integrantes
 | Ivan Farid Espadas Escalante| Manuel Jasaelle Peraza Soberanis|
 | ----- | ---- |
