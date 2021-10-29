@@ -182,6 +182,7 @@ input[type="text"]:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-blend-mode: soft-light;
 }
 
 @media screen and (max-width: 980px) {
@@ -241,4 +242,3 @@ input[type="text"]:focus {
         font-size: 11px;
     }
 }
-
