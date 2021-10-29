@@ -189,12 +189,13 @@ input[type="text"]:focus {
 }
 
 #fondo-aviso-privacidad {
+    background-color: rgb(133, 130, 130);
     height: 100vh;
     background-image: url(/Img/backgrounds/aviso-privacidad-fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-blend-mode: soft-light;
+    background-blend-mode: multiply;
 }
 
 @media screen and (max-width: 980px) {
