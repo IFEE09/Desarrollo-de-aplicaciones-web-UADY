@@ -18,8 +18,17 @@ footer {
     margin-top: 4rem;
 }
 
+.login-title i{
+    font-size: 5rem;
+    color: white;
+}
+
 .login-title h3 {
     font-weight: bold;
+    color: white;
+}
+
+.mb-4 label {
     color: white;
 }
 
@@ -29,9 +38,25 @@ footer {
 
 .login-box-primary {
     border-radius: 30px;
-    background: linear-gradient(to top, rgb(75, 172, 37) , rgb(168, 165, 7));
+    background: linear-gradient(to top, #212429, rgb(107, 107, 105));
     width: 25%;
-    padding: 2vw;
+    padding: 1.5vw;
+}
+
+.login-box-primary a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.d-grid button {
+    color:white;
+    background-color: rgb(75, 172, 37);
+}
+
+.d-grid button:hover {
+    background-color: rgb(66, 214, 8);
+    font-weight: bolder;
+    color: white;
 }
 
 .form-inline .form-control {
@@ -42,6 +67,10 @@ footer {
 
 .login-link {
     visibility: hidden;
+}
+
+.register {
+    color: white;
 }
 
 .navbar-toggler {
