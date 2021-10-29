@@ -2,20 +2,100 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 footer {
     align-items: center;
     text-align: center;
     margin-bottom: 0px;
     padding: 0.5rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
 }
 
-input[type="text"]:focus {
-    outline: 0!important;
-    box-shadow: none!important;
-    color: rgb(75, 172, 37)!important;
-    border-color: inherit!important;
-    box-shadow: none!important;
+input[type = "text"]:focus {
+    color: rgb(75, 172, 37);
+    outline: 0;
+    border-color: inherit;
+    box-shadow: none;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    
+}
+
+input[type="checkbox"]:hover {
+    appearance: none;
+    cursor: pointer;
+    background-color: #cec9c9;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rgb(75, 172, 37);
+    border: none;
+    outline: none;
+    outline-color: none;
+}
+
+input[type="checkbox"]:focus {
+    color: #495057;
+    outline: 0;
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.text-center p {
+    color: white;
+    margin: 0rem;
+}
+
+
+.login-title {
+    margin-top: 4rem;
+}
+
+.login-title i{
+    font-size: 5rem;
+    color: white;
+}
+
+.login-title h3 {
+    font-weight: bold;
+    color: white;
+}
+
+.mb-4 label {
+    color: white;
+}
+
+.login-title h2 {
+    color: white;
+}
+
+.login-box-primary {
+    border-radius: 30px;
+    background: linear-gradient(to top, #212429, rgb(107, 107, 105));
+    width: 25%;
+    padding: 1.5vw;
+}
+
+.login-box-primary a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+.d-grid button {
+    color:white;
+    background-color: rgb(75, 172, 37);
+}
+
+.d-grid button:hover {
+    background-color: rgb(66, 214, 8);
+    font-weight: bolder;
+    color: white;
 }
 
 .form-inline .form-control {
@@ -26,6 +106,10 @@ input[type="text"]:focus {
 
 .login-link {
     visibility: hidden;
+}
+
+.register {
+    color: white;
 }
 
 .navbar-toggler {
@@ -59,32 +143,9 @@ input[type="text"]:focus {
     border:2px solid rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;  
 }
 
-.offers-title {
-    margin: auto;
-    text-align: center;
-    margin: 2rem;
-}
-
-.cards-div {
-    text-align: center;
-}
-
-.card {
-    display: inline-block;
-    margin: 10px;
-}
-
-.btn-offers {
-    background-color: rgb(75, 172, 37);
-    border: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))
-}
-
-.btn-offers:hover {
-    background-color: rgb(66, 214, 8);
-}
-
-.btn-offers:focus {
-    background-color: rgb(75, 172, 37);
+.btn:focus {
+    outline:none ;
+    box-shadow: none;
 }
 
 .footer-link i {
@@ -149,6 +210,10 @@ input[type="text"]:focus {
     .hidden-980 {
         visibility: hidden;
     }
+
+    .login-box-primary {
+        width: 35%;
+    }
 }
 
 @media screen and (max-width: 886px){
@@ -176,5 +241,14 @@ input[type="text"]:focus {
         display: inherit;
     }
 
+    .login-box-primary {
+        width: 50%;
+    }
+
 }
 
+@media screen and (max-width: 500px){
+    .login-box-primary {
+        width: 80%;
+    }
+}
