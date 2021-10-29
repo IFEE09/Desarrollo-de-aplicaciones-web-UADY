@@ -16,16 +16,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="icon" href="./Img/icon/icon.png">
-    <link rel="stylesheet" href="./css/login.css">
-
-    <title>Mercados México</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/carrito.css">
+    <title>Mi carrito</title>
 </head>
 
 <body>
-
     <!-- Navigation bar -->
     <header class="header">
-
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <a href="./index.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
@@ -41,24 +39,27 @@
                     <ul class="navbar-nav mx-auto">
 
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Inicio</a>
+                            <a class="nav-link active" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categorías</a>
                             <ul class="dropdown-menu ">
-                              <li><a class="dropdown-item" href="./categorias-perecederos-materias-primas.html">Perecederos y Materias Primas</a></li>
-                              <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a></li>
-                              <li><a class="dropdown-item" href="./categorias-otros.html">Otros</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./categorias-perecederos-materias-primas.html">Perecederos y Materias
+                                        Primas</a></li>
+                                <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./categorias-otros.html">Otros</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="nav-link" href="./registro.html">Regístrate</a>
+                            <a class="nav-link " href="/registro.html">Regístrate</a>
                         </li>
                         <li>
                             <a class="nav-link" href="#">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav-link login-link active" href="./login.html">Inicia sesión</a>
+                            <a class="nav-link login-link" href="/login.html">Inicia sesión</a>
                         </li>
                     </ul>
 
@@ -70,10 +71,9 @@
                                 <div class="input-group">
                                     <input class="form-control mr-sm-2 search-bar-input" type="search"
                                         placeholder="encuentra lo que buscas" aria-label="Search">
-                                    <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i
-                                            class="fas fa-search"></i></button>
+                                    <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
                                     <button type="reset" class="btn my-sm-0 cart-button" onclick="location.href='carrito.html'"><i class="fas fa-shopping-cart"></i></button>
-                                    <a class="nav-link hidden-980 active" href="./login.html">Inicia sesión</a>
+                                    <a class="nav-link hidden-980" href="/login.html">Inicia sesión</a>
                                 </div>
                             </form>
                         </li>
@@ -82,44 +82,71 @@
             </div>
         </nav>
     </header>
-
-    <!-- login -->
-    <div class="container mt-4 mb-4 shadow login-box-primary">
-        <div class="row align-items-stretch">
-            <!-- <div class="col login-img d-none d-lg-block col-md-5 col-lg-5 col-xl-6 login rounded
-            ">
-            </div> -->
-            <div class="col">
-                <div class="text-center login-title">
-                    <i class="far fa-user-circle"></i>
-                    <h2 class="fw-bold py-5 text-center">Ingresar</h2>
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
                 </div>
-                <!-- login -->
-                <form action="#">
-                    <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Correo" name="email">
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
                     </div>
-                    <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Contraseña" name="password">
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
                     </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-login">Iniciar sesión</button>
-                    </div>
-                    <div class="my-3 mx-10 text-center">
-                        <a class="register" href="./registro.html">Registrate</a><br>
-                        <a class="register" href="">Olvidé mi Contraseña</a>
-                    </div>
-                </form>
+                </div>
             </div>
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+                <div class="row shoppingCartItem">
+                    <div class="col-6">
+                        <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                            <img  src='./img/offers/madera.png' class="shopping-cart-image">
+                            <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0 ">Madera
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                            <p class="item-price mb-0 shoppingCartItemPrice">$500 MX</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div
+                            class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                            <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number"
+                                value="1">
+                            <button class="btn btn-danger buttonDelete" type="button">X</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0 total-price">Total  </p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">$500 MX</p>
+                        <button class="btn btn-dark ms-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+            
+
+
         </div>
-    </div>
+
+    </section>
 
     <!-- footer part -->
-    <footer class="bg-dark">
+    <footer class="bg-dark sticky-bottom">
         <div>
             <ul>
                 <li class="footer-items">

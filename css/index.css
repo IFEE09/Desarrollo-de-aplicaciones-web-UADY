@@ -8,6 +8,7 @@ footer {
     margin-bottom: 0px;
     padding: 0.5rem;
     margin-top: 2rem;
+    margin-bottom: 0rem!important;  
 }
 
 input[type="text"]:focus {
