@@ -10,6 +10,14 @@ footer {
     margin-top: 2rem;
 }
 
+input[type="text"]:focus {
+    outline: 0!important;
+    box-shadow: none!important;
+    color: rgb(75, 172, 37)!important;
+    border-color: inherit!important;
+    box-shadow: none!important;
+}
+
 .form-inline .form-control {
     display: inline-block;
     width: auto;
@@ -49,11 +57,6 @@ footer {
     background-color:rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;
     color: white;
     border:2px solid rgba(var(--bs-dark-rgb),var(--bs-bg-opacity))!important;  
-}
-
-.btn:focus {
-    outline:none ;
-    box-shadow: none;
 }
 
 .offers-title {
