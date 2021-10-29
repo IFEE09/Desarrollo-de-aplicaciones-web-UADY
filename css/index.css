@@ -8,7 +8,8 @@ footer {
     margin-bottom: 0px;
     padding: 0.5rem;
     padding-top: 3rem;
-    bottom: 0rem;
+    bottom: 0;
+    width: 100%;
 }
 
 input[type="text"]:focus {
@@ -162,7 +163,7 @@ input[type="text"]:focus {
 }
 
 .nosotros-title {
-    padding-top: 3rem;
+    padding-top: 7rem;
     margin-left: 3rem;
     color: white;
 }
@@ -172,10 +173,11 @@ input[type="text"]:focus {
     color: white;
     width: 60%;
     position: relative;
+    font-size: 18px;
 }
 
 #fondo-nosotros {
-    height: 45vw;
+    height: 100vh;
     background-image: url(/Img/backgrounds/nosotros-fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -192,6 +194,7 @@ input[type="text"]:focus {
 
     #fondo-nosotros {
         height: 100vw;
+        overflow: scroll;
         
     }
 
