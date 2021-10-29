@@ -119,17 +119,31 @@ input[type="checkbox"]:focus {
 
 .search-bar-input {
     width: 20em!important;
+    width: 20em!important;
+    border-radius: 10px!important;
 }
 
 .search-button {
     margin-left: 0.5rem!important;
     background-color: white;
+    border-radius: 10px!important;
 }
 .search-button::selection {
     padding: 0.6rem;
     margin-left: -0.3rem;
     margin-top: 1.02rem!important;
     background-color: white;
+}
+
+.cart-button {
+    margin-left: 0.5rem!important;
+    background-color: white;
+    border-radius: 10px!important;
+}
+
+.cart-button:hover{
+    background-color: rgba(var(--bs-dark-rgb),var(--bs-bg-opacity));
+    color: white;
 }
 
 .search-button:hover {
@@ -214,15 +228,20 @@ input[type="checkbox"]:focus {
 
 @media screen and (max-width: 886px){
     .search-bar-input  {
-        width: 75vw!important;
+        width: 30vw!important;
         margin-right: 0px;
     } 
     .search-button {
-        display: inline-block;   
+        display: inline-block;
+        margin-top: 0.5rem!important;
+        margin-left: 0rem!important;
+        margin-right: 0.5rem;
     }
 
-    .search-bar{
-        margin-right: 0rem;
+    .cart-button {
+        display: inline-block;
+        margin-top: 0.5rem!important;
+        margin-left: 0rem!important;
     }
 
     .search-bar a {
