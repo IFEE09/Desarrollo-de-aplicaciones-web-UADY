@@ -4,4 +4,3 @@ Swal.fire({
     confirmButtonText: "Aceptar", 
     confirmButtonColor: 'rgb(75, 172, 37)'
 });
-
