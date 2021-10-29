@@ -98,26 +98,24 @@
                 <!-- login -->
                 <form action="#">
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Nombre(s)" name="name">
+                        <input type="text" class="form-control" placeholder="Nombre(s)" name="name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Apellido(s)" name="last-name">
+                        <input type="text" class="form-control" placeholder="Apellido(s)" name="last-name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Correo" name="email">
+                        <input type="email" class="form-control" placeholder="Correo" name="email" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Contraseña" name="password-register">
+                        <input type="password" class="form-control" placeholder="Contraseña" name="password-register" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Repetir contraseña"
-                            name="password-register-repeat">
+                        <input type="password" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat" required>
                     </div>
 
                     <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Al registrarme acepto los términos y
-                            condiciones</label>
+                        <input type="checkbox" name="connected" class="form-check-input" required>
+                        <label for="connected" class="form-check-label">Al registrarme acepto los términos y condiciones</label>
                         <a class="terms" href="">Ver términos y condiciones</a>
                     </div>
                     <div class="d-grid">
@@ -162,8 +160,6 @@
             <p>Todos los derechos reservados por Mercados México &copy; 2021-2022</p>
         </div>
     </footer>
-
-
 </body>
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </html>
