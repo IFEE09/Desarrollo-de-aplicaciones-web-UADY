@@ -8,8 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,11 +24,9 @@
 
     <!-- Navigation bar -->
     <header class="header">
-
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <a href="./index.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
-
                 <!-- Collapsed button responsive -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent">
@@ -36,18 +34,19 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
                     <ul class="navbar-nav mx-auto">
-
                         <li class="nav-item">
                             <a class="nav-link" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categorías</a>
                             <ul class="dropdown-menu ">
-                              <li><a class="dropdown-item" href="./categorias-perecederos-materias-primas.html">Perecederos y Materias Primas</a></li>
-                              <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a></li>
-                              <li><a class="dropdown-item" href="./categorias-otros.html">Otros</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./categorias-perecederos-materias-primas.html">Perecederos y Materias
+                                        Primas</a></li>
+                                <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./categorias-otros.html">Otros</a></li>
                             </ul>
                         </li>
                         <li>
@@ -63,7 +62,6 @@
 
                     <ul class="navbar-nav mx-auto">
                         <li class="search-bar">
-
                             <form class="d-flex" action="">
                                 <!-- la clase input-group es el que le da la propioedad de inlineblock -->
                                 <div class="input-group">
@@ -71,7 +69,9 @@
                                         placeholder="encuentra lo que buscas" aria-label="Search">
                                     <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i
                                             class="fas fa-search"></i></button>
-                                    <button type="reset" class="btn my-sm-0 cart-button" onclick="location.href='carrito.html'"><i class="fas fa-shopping-cart"></i></button>
+                                    <button type="reset" class="btn my-sm-0 cart-button"
+                                        onclick="location.href='carrito.html'"><i
+                                            class="fas fa-shopping-cart"></i></button>
                                     <a class="nav-link hidden-980 active" href="./login.html">Inicia sesión</a>
                                 </div>
                             </form>
@@ -85,36 +85,34 @@
     <!-- login -->
     <div class="container mt-4 mb-4 shadow login-box-primary">
         <div class="row align-items-stretch">
-            <!-- <div class="col login-img d-none d-lg-block col-md-5 col-lg-5 col-xl-6 login rounded
-            ">
-            </div> -->
-            <div class="col">
-                <div class="text-center login-title">
-                    <i class="far fa-user-circle"></i>
-                    <h2 class="fw-bold py-5 text-center">Ingresar</h2>
-                </div>
-                <!-- login -->
-                <form action="#">
-                    <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Correo" name="email">
-                    </div>
-                    <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Contraseña" name="password">
-                    </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input">
-                        <label for="connected" class="form-check-label">Mantenerme conectado</label>
-                    </div>
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-login">Iniciar sesión</button>
-                    </div>
-                    <div class="my-3 mx-10 text-center">
-                        <a class="register" href="./registro.html">Registrate</a><br>
-                        <a class="register" href="">Olvidé mi Contraseña</a>
-                    </div>
-                </form>
-            </div>
         </div>
+        <div class="col">
+            <div class="text-center login-title">
+                <i class="far fa-user-circle"></i>
+                <h2 class="fw-bold py-5 text-center">Ingresar</h2>
+            </div>
+            <!-- login -->
+            <form action="#">
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Correo" name="email">
+                </div>
+                <div class="mb-4">
+                    <input type="text" class="form-control" placeholder="Contraseña" name="password">
+                </div>
+                <div class="mb-4 form-check">
+                    <input type="checkbox" name="connected" class="form-check-input">
+                    <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-login">Iniciar sesión</button>
+                </div>
+                <div class="my-3 mx-10 text-center">
+                    <a class="register" href="./registro.html">Registrate</a><br>
+                    <a class="register" href="">Olvidé mi Contraseña</a>
+                </div>
+            </form>
+        </div>
+    </div>
     </div>
 
     <!-- footer part -->
@@ -122,7 +120,8 @@
         <div>
             <ul>
                 <li class="footer-items">
-                    <a href="./nosotros.html" class="footer-link">Acerca de nosotros&nbsp;&nbsp;<i class="fas fa-user-tie"></i></a>
+                    <a href="./nosotros.html" class="footer-link">Acerca de nosotros&nbsp;&nbsp;<i
+                            class="fas fa-user-tie"></i></a>
                 </li>
                 <li class="footer-items">
                     <a href="mailto:info@mercadosmexico.mx" class="footer-link">Envíanos un correo &nbsp;<i
@@ -133,7 +132,8 @@
                             class="fas fa-user-secret"></i></a>
                 </li>
                 <li class="footer-items">
-                    <a class="footer-link" href="./registro.html">Regístrate&nbsp;&nbsp;<i class="fas fa-user-plus"></i></a>
+                    <a class="footer-link" href="./registro.html">Regístrate&nbsp;&nbsp;<i
+                            class="fas fa-user-plus"></i></a>
                 </li>
             </ul>
         </div>
