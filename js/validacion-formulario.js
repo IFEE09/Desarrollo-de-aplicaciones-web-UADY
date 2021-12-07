@@ -59,6 +59,7 @@ const validarFormulario = (event) => {
                 document.getElementById('password').style.color = "red"; 
                 campos['password'] = false;
             }
+            validarPassword2();
         break;
 
         case 'password-repeat':
@@ -89,9 +90,6 @@ inputs.forEach((input) => {
 const enviado = document.getElementById('enviado');
 const no_enviado = document.getElementById('no-enviado');
 
-enviado.innerHTML = '';
-no_enviado.innerHTML = '';
-
 //Valida que no este vacio y que sea correcto
 formulario.addEventListener('submit', (event) => {
 
@@ -100,25 +98,22 @@ formulario.addEventListener('submit', (event) => {
 
     if(campos.nombre && campos.apellido && campos.password && campos.correo ) {
         formulario.reset();
-        enviado.style.visibility = 'visible';
-        enviado.innerHTML = '<h2>Registro completado</h2>';
-        setTimeout(() => {
-            enviado.style.visibility = 'hidden';
-            enviado.innerHTML = ''
-        }, 3000);
         
+        Swal.fire({
+            icon: 'success',
+            title: 'Registro completo',
+            text: 'Inicia sesion',
+          });
+
         setTimeout(() => {
-            window.location = 'login.html'
+            window.location = 'index.html'
         }, 3000);
 
     } else {
-        no_enviado.style.visibility = 'visible';
-        no_enviado.style.
-        no_enviado.innerHTML = '<h2>Error, campos invalidos</h2>';
-        setTimeout(() => {
-            no_enviado.style.visibility = 'hidden';
-            no_enviado.innerHTML = ''
-        }, 3000);
+        Swal.fire({
+            icon: 'error',
+            title: 'Datos invalidos',
+          });
     }
 
 });
