@@ -93,21 +93,21 @@
                     <h2 class="fw-bold py-5 text-center">Registro</h2>
                 </div>
                 <!-- login -->
-                <form action="#">
+                <form id="formulario" action="#">
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Nombre(s)" name="name" required>
+                        <input id="nombre" type="text" class="form-control" placeholder="Nombre(s)" name="name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Apellido(s)" name="last-name" required>
+                        <input id="apellido" type="text" class="form-control" placeholder="Apellido(s)" name="last-name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="email" class="form-control" placeholder="Correo" name="email" required>
+                        <input id="correo" type="email" class="form-control" placeholder="Correo" name="email" required>
                     </div>
                     <div class="mb-4">
-                        <input id="password" type="password" class="form-control" placeholder="Contraseña" name="password-register" required>
+                        <input id="password" type="password" class="form-control" placeholder="Contraseña" name="password" required>
                     </div>
                     <div class="mb-4">
-                        <input id="password-repeat" type="password" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat" required>
+                        <input id="password-repeat" type="password" class="form-control" placeholder="Repetir contraseña" name="password-repeat" required>
                     </div>
 
                     <div class="mb-4 form-check">
@@ -116,7 +116,7 @@
                         <a class="terms" href="">Ver términos y condiciones</a>
                     </div>
                     <div class="d-grid">
-                        <button type="button" onclick="validar_Formulario()" class="btn btn-login" >Registrate</button>
+                        <button type="submit" onclick="validar_Formulario()" class="btn btn-login" >Registrate</button>
                     </div>
                     <div class="my-3 mx-10 text-center">
                         <p>o</p>
