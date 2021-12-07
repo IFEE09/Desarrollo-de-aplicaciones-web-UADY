@@ -28,7 +28,7 @@
 
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <a href="./index.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
+                <a href="./inicio.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
 
                 <!-- Collapsed button responsive -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,44 +38,6 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categorías</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./categorias-perecederos-materias-primas.html">Perecederos y Materias Primas</a></li>
-                                <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a></li>
-                                <li><a class="dropdown-item" href="./categorias-otros.html">Otros</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a class="nav-link active" href="./registro.html">Regístrate</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li>
-                            <a class="nav-link login-link" href="./login.html">Inicia sesión</a>
-                        </li>
-                    </ul>
-
-                    <ul class="navbar-nav mx-auto">
-                        <li class="search-bar">
-                            <form class="d-flex" action="">
-                                <!-- el input-group es el que le da la propioedad de inlineblock -->
-                                <div class="input-group">
-                                    <input class="form-control mr-sm-2 search-bar-input" type="search"
-                                        placeholder="encuentra lo que buscas" aria-label="Search">
-                                    <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i
-                                            class="fas fa-search"></i></button>
-                                    <button type="reset" class="btn my-sm-0 cart-button" onclick="location.href='carrito.html'"><i class="fas fa-shopping-cart"></i></button>
-                                    <a class="nav-link hidden-980" href="./login.html">Inicia sesión</a>
-                                </div>
-                            </form>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </nav>
@@ -93,34 +55,33 @@
                     <h2 class="fw-bold py-5 text-center">Registro</h2>
                 </div>
                 <!-- login -->
-                <form action="#">
+                <form id="formulario" action="#">
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Nombre(s)" name="name" required>
+                        <input maxlength="38" id="nombre" type="text" class="form-control" placeholder="Nombre(s)" name="name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="text" class="form-control" placeholder="Apellido(s)" name="last-name" required>
+                        <input maxlength="38" id="apellido" type="text" class="form-control" placeholder="Apellido(s)" name="last-name" required>
                     </div>
                     <div class="mb-4">
-                        <input type="email" class="form-control" placeholder="Correo" name="email" required>
+                        <input maxlength="28" id="correo" type="email" class="form-control" placeholder="Correo" name="email" required>
                     </div>
                     <div class="mb-4">
-                        <input id="password" type="password" class="form-control" placeholder="Contraseña" name="password-register" required>
+                        <input maxlength="14" id="password" type="password" class="form-control" placeholder="Contraseña" name="password" required>
                     </div>
                     <div class="mb-4">
-                        <input id="password-repeat" type="password" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat" required>
+                        <input maxlength="14" id="password-repeat" type="password" class="form-control" placeholder="Repetir contraseña" name="password-repeat" required>
                     </div>
 
                     <div class="mb-4 form-check">
                         <input type="checkbox" name="connected" class="form-check-input" required>
                         <label for="connected" class="form-check-label">Al registrarme acepto los términos y condiciones</label>
-                        <a class="terms" href="">Ver términos y condiciones</a>
                     </div>
                     <div class="d-grid">
-                        <button type="button" onclick="validar_Formulario()" class="btn btn-login" >Registrate</button>
+                        <button type="submit" class="btn btn-login" >Registrate</button>
                     </div>
                     <div class="my-3 mx-10 text-center">
                         <p>o</p>
-                        <a class="register" href="./login.html">Inicia sesión</a><br>
+                        <a class="register" href="./index.html">Inicia sesión</a><br>
                     </div>
                 </form>
             </div>
@@ -131,9 +92,6 @@
     <footer class="bg-dark">
         <div>
             <ul>
-                <li class="footer-items">
-                    <a href="" class="footer-link">Acerca de nosotros&nbsp;&nbsp;<i class="fas fa-user-tie"></i></a>
-                </li>
                 <li class="footer-items">
                     <a href="mailto:info@mercadosmexico.mx" class="footer-link">Envíanos un correo &nbsp;<i
                             class="far fa-envelope"></i></a>
