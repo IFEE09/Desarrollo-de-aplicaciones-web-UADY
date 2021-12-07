@@ -4,7 +4,7 @@ const inputs = document.querySelectorAll('#formulario input'); //creando un arra
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{1,50}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-	password: /^.{8,50}$/, // 4 a 12 digitos.
+	password: /^.{6,14}$/, // 4 a 12 digitos.
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 };
@@ -87,14 +87,10 @@ inputs.forEach((input) => {
     input.addEventListener('blur', validarFormulario);
 });
 
-const enviado = document.getElementById('enviado');
-const no_enviado = document.getElementById('no-enviado');
-
 //Valida que no este vacio y que sea correcto
 formulario.addEventListener('submit', (event) => {
 
     event.preventDefault();
-
 
     if(campos.nombre && campos.apellido && campos.password && campos.correo ) {
         formulario.reset();

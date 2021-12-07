@@ -55,17 +55,17 @@
                 <i class="far fa-user-circle"></i>
                 <h2 class="fw-bold py-5 text-center">Ingresar</h2>
             </div>
-            <!-- login -->
-            <form action="#">
+            <!-- login form -->
+            <form id="formulario" action="#">
                 <div class="mb-4">
-                    <input type="text" class="form-control" placeholder="Correo" name="email" required>
+                    <input maxlength="28" id="email" type="text" class="form-control" placeholder="Correo" name="email" required>
                 </div>
                 <div class="mb-4">
-                    <input type="text" class="form-control" placeholder="Contraseña" name="password" required>
+                    <input id="password" maxlength="14" type="password" class="form-control" placeholder="Contraseña" name="password" required>
                 </div>
                 <div class="mb-4 form-check">
                     <input type="checkbox" name="connected" class="form-check-input">
-                    <label for="connected" class="form-check-label">Mantenerme conectado</label>
+                    <label for="connected" class="form-check-label">Recordar credenciales</label>
                 </div>
                 <div class="d-grid">
                     <button type="submit" class="btn btn-login">Iniciar sesión</button>
@@ -107,5 +107,6 @@
         </div>
     </footer>
 </body>
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/validacion-login.js"></script>
 </html>
