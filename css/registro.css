@@ -245,6 +245,7 @@ input[type="checkbox"]:focus {
     margin-bottom: 1.5rem;
     border-radius: 10px;
     color: rgb(58, 55, 55);
+    visibility: hidden;
 }
 
 .no-enviado{
@@ -257,6 +258,7 @@ input[type="checkbox"]:focus {
     margin-bottom: 1.5rem;
     border-radius: 10px;
     color: white;
+    visibility: hidden;
 }
 
 @media screen and (max-width: 980px) {
