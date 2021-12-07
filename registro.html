@@ -104,10 +104,10 @@
                         <input type="email" class="form-control" placeholder="Correo" name="email" required>
                     </div>
                     <div class="mb-4">
-                        <input type="password" class="form-control" placeholder="Contraseña" name="password-register" required>
+                        <input id="password" type="password" class="form-control" placeholder="Contraseña" name="password-register" required>
                     </div>
                     <div class="mb-4">
-                        <input type="password" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat" required>
+                        <input id="password-repeat" type="password" class="form-control" placeholder="Repetir contraseña" name="password-register-repeat" required>
                     </div>
 
                     <div class="mb-4 form-check">
@@ -116,7 +116,7 @@
                         <a class="terms" href="">Ver términos y condiciones</a>
                     </div>
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-login" >Registrate</button>
+                        <button type="button" onclick="validar_Formulario()" class="btn btn-login" >Registrate</button>
                     </div>
                     <div class="my-3 mx-10 text-center">
                         <p>o</p>
@@ -157,6 +157,8 @@
             <p>Todos los derechos reservados por Mercados México &copy; 2021-2022</p>
         </div>
     </footer>
-</body>
+
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/validacion-formulario.js"></script>
+</body>
 </html>
