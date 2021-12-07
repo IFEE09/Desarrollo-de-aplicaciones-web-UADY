@@ -24,33 +24,51 @@ const campos = {
 //Valida el formulario, falta validar el porque cuando pones el correcto da error. 
 const validarFormulario = (event) => {
 
-    const correo = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
     switch(event.target.name){
         case 'email':
-            if(credenciales.email_good.test(event.target.value) && correo === credenciales.correo){
+            if(credenciales.email_good.test(event.target.value)){
                 campos['correo'] = true;
             } else {
                 campos['correo'] = false;
             }
+            validarSesion();
         break;
 
         case 'password':
-            if(credenciales.password_good.test(event.target.value) && password == credenciales.password){
+            if(credenciales.password_good.test(event.target.value)){
                 campos['password'] = true;
             } else {
                 campos['password'] = false;
             }
+            validarSesion();
         break;
     }
 
 };
 
+function validarSesion(){
+
+    const correo = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+    if(correo === credenciales.correo){
+        campos['correo'] = true;
+    } else {
+        campos['correo'] = false;
+    }
+
+    if(password ===  credenciales.password){
+        campos['password'] = true;
+    } else {
+        campos['password'] = true;
+    }
+
+}
 
 inputs.forEach((input) => {
     input.addEventListener('keyup', validarFormulario);
     input.addEventListener('blur', validarFormulario);
+    input.addEventListener('click', validarFormulario);
 });
 
 
