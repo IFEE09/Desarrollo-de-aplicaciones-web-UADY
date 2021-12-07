@@ -235,6 +235,30 @@ input[type="checkbox"]:focus {
     background-color: rgb(75, 172, 37);
 }
 
+.enviado {
+    background-color: lawngreen;
+    margin-right: auto;
+    margin-left: auto;
+    width: 20rem;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    color: rgb(58, 55, 55);
+}
+
+.no-enviado{
+    background-color: rgb(219, 34, 34);
+    margin-right: auto;
+    margin-left: auto;
+    width: 20rem;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    color: white;
+}
+
 @media screen and (max-width: 980px) {
     .hidden-980 {
         visibility: hidden;
@@ -300,3 +324,5 @@ input[type="checkbox"]:focus {
         width: 80%;
     }
 }
+
+
