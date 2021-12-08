@@ -1,14 +1,11 @@
 const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input');
-
 
 const credenciales = {
     email: 'usuario@gmail.com',
     password: 'root123456',
-    password_good: 'root', // 4 a 12 digitos.
+    password_good: 'root',
 	email_good: 'admin'
 }
-
 
 //Valida el formulario, falta validar el porque cuando pones el correcto da error. 
  validarSesion =(e)=>{
@@ -18,27 +15,16 @@ const credenciales = {
         document.cookie = 'superuser';
     }
 }
-
-formulario.addEventListener('submit', (event) => {
-    
-    event.preventDefault();
-
-    validarSesion(event);
+formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
+    validarSesion(e);
     if(document.cookie){
         Swal.fire({
             icon: 'success',
             title: 'Inicio exitoso',
             text: 'Redirigiendo al inicio',
         });
-        if(document.cookie=='user'){
-            setTimeout(() => {
-                window.location = 'inicio.html'
-            }, 3000);
-        }else if(document.cookie=='superuser'){
-            setTimeout(() => {
-                window.location = 'inicio.html'
-            }, 3000);
-        }
+        sesion(e);
     } else {
         Swal.fire({
             icon: 'error',
@@ -46,5 +32,13 @@ formulario.addEventListener('submit', (event) => {
             text: 'Intente de nuevo',
           });
     }
-
 });
+
+sesion = (e)=>{
+    if(document.cookie=='user'){
+        window.location = 'inicio.html'
+    }else if(document.cookie=='superuser'){
+        window.location = 'inicio-super.html'
+    }
+}
+window.addEventListener('DOMContentLoaded',sesion);

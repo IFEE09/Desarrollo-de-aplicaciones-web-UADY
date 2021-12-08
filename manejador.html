@@ -1,6 +1,5 @@
 <!DOCTYPE html5>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="icon" href="./Img/icon/icon.png">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/manejador.css">
     <title>Inicio de sesión</title>
 </head>
 <body>
@@ -52,26 +51,33 @@
         </div>
         <div class="col">
             <div class="text-center login-title">
-                <i class="far fa-user-circle"></i>
-                <h2 class="fw-bold py-5 text-center">Ingresar</h2>
+                <i class="fas fa-globe-americas"></i>
+                <h2 class="fw-bold py-5 text-center">Envia un producto a su categoria</h2>
             </div>
             <!-- login form -->
             <form id="formulario" action="#">
                 <div class="mb-4">
-                    <input maxlength="28" id="email" type="text" class="form-control" placeholder="Correo" name="email" required>
+                    <input maxlength="28" id="email" type="text" class="form-control" placeholder="Nombre del Producto" name="nombre" required>
                 </div>
                 <div class="mb-4">
-                    <input id="password" maxlength="14" type="password" class="form-control" placeholder="Contraseña" name="password" required>
+                    <textarea  placeholder="Descripcion del Producto" name="descripcion" id="descripcion" cols="33" rows="5"></textarea>
                 </div>
-                <div class="mb-4 form-check">
-                    <input type="checkbox" name="connected" class="form-check-input">
-                    <label for="connected" class="form-check-label">Recordar credenciales</label>
+                <div class="mb-4">
+                    <input class="form-control" id="precio" name="precio" type="number" placeholder="precio">
+                </div>
+                <div class="mb-4">
+                    <input class="form-control" id="imagen" type="file" name="image" placeholder="imagen" accept="image/*">
+                </div>
+                <div class="mb-4 categoria-form">
+                    <label class="categoria" for="categoria">Elige la categoria</label> 
+                    <select name="categoria" id="categoria">
+                        <option value="otros">otros</option>
+                        <option value="perecederos">Perecederos-materias-primas</option>
+                        <option value="ropa">Ropa-Calzado</option>
+                    </select>
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn btn-login">Iniciar sesión</button>
-                </div>
-                <div class="my-3 mx-10 text-center">
-                    <a class="register" href="./registro.html">Registrate</a><br>
+                    <button type="submit" class="btn btn-login">Enviar</button>
                 </div>
             </form>
         </div>
@@ -108,6 +114,5 @@
     </footer>
 </body>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="./js/sweetAlert.js"></script>
-<script src="./js/validacion-login.js"></script>
+<script src="js/manejador.js"></script>
 </html>
