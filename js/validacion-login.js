@@ -2,9 +2,9 @@ const formulario = document.getElementById('formulario');
 
 const credenciales = {
     email: 'usuario@gmail.com',
-    password: 'root123456',
+    password: 'usuario1234',
 	email_good: 'admin@gmail.com',
-    password_good: 'root'
+    password_good: 'rootuser'
 }
 
 //Valida el formulario, falta validar el porque cuando pones el correcto da error. 
