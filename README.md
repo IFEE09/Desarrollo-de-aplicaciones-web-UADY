@@ -9,5 +9,5 @@ Sitio de prueba para el proyecto: <a href="http://nulleaks.com/" target="_blank"
 # Integrantes
 | Ivan Farid Espadas Escalante| Manuel Jasaelle Peraza Soberanis|
 | ----- | ---- |
-|![ivan](https://github.com/IFEE09/Desarrollo_Web/blob/main/Integrantes/Ivan.jpeg)|![manuel](https://github.com/IFEE09/Desarrollo_Web/blob/main/Integrantes/Manuel.jpeg)|
+|![ivan](https://github.com/IFEE09/Desarrollo_Web/blob/main/Integrantes/Ivan.jpg)|![manuel](https://github.com/IFEE09/Desarrollo_Web/blob/main/Integrantes/Manuel.jpeg)|
 |[IFEE09](https://github.com/IFEE09)|[jasperaza](https://github.com/jasperaza)|
