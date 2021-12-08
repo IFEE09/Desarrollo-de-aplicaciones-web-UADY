@@ -41,4 +41,5 @@ sesion = (e)=>{
         window.location = 'inicio-super.html'
     }
 }
+
 window.addEventListener('DOMContentLoaded',sesion);

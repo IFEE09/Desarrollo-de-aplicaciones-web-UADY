@@ -1,7 +1,11 @@
 
+const $cerrar1 = document.querySelector('.cerrar');
 
-
-
+cerrarSesion = ()=>{
+    document.cookie = 'superuser;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    document.cookie = 'user;expires=Thu, 01 Jan 1970 00:00:00 GMT';
+    window.location = 'index.html';
+}
 
 eliminProductos = (i)=>{
     let memoria = localStorage;
@@ -14,6 +18,11 @@ eliminProductos = (i)=>{
             data.remove();
         }
     })
+    Swal.fire({
+        icon: 'error',
+        title: 'eliminado',
+        text: 'el producto se elimino del carrito',
+    });
 }
 
 inserProductos = ()=>{
@@ -24,16 +33,19 @@ inserProductos = ()=>{
     carrito.forEach((el,i )=> {
         let producto = `               
         <div class="row producto" data-id="${i}">
-            <div class="col-3">
+            <div class="col-2">
+                <h6>${i}</h6>
+            </div>
+            <div class="col-2">
                 <h6>${el.nombre}</h6>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <h6 class="text-truncate">$${el.precio}</h6>
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <img width="50" height="50" src="${el.imagen}">
             </div>
-            <div class="col-3">
+            <div class="col-2">
                 <button type="button" class="btn btn-danger" onclick="eliminProductos(${i})">Eliminar</button>
             </div>
         </div>`
@@ -51,6 +63,11 @@ inicio = async(e)=>{
     }
     carrito.push(datos);
     memoria.setItem('carrito',JSON.stringify(carrito));
-    console.log(carrito)
+    Swal.fire({
+        icon: 'success',
+        title: 'agregado',
+        text: 'el producto se agrego al carrito',
+    });
 }
 window.addEventListener('load',inserProductos)
+$cerrar1.addEventListener('click',cerrarSesion)

@@ -24,10 +24,9 @@
 
     <!-- Navigation bar -->
     <header class="header">
-
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
-                <a href="./inicio.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
+                <a href="./inicio-super.html" class="navbar-brand">&nbsp;&nbsp;&nbsp;Mercados México &reg;</a>
 
                 <!-- Collapsed button responsive -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -38,13 +37,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
                     <ul class="navbar-nav mx-auto">
+
                         <li class="nav-item">
-                            <a class="nav-link" href="./inicio.html">Inicio</a>
+                            <a class="nav-link active" href="./inicio-super.html">Inicio</a>
                         </li>
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#">Categorías</a>
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Categorías</a>
                             <ul class="dropdown-menu ">
-                                <li><a class="dropdown-item active"
+                                <li><a class="dropdown-item"
                                         href="./categorias-perecederos-materias-primas.html">Perecederos y Materias
                                         Primas</a></li>
                                 <li><a class="dropdown-item" href="./categorias-ropa-calzado.html">Ropa y Calzado</a>
@@ -56,7 +56,7 @@
                             <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
                         <li>
-                            <a class="nav-link login-link">Cerrar sesion</a>
+                            <button class="nav-link login-link">Cerrar sesion</button>
                         </li>
                     </ul>
 
@@ -65,11 +65,15 @@
 
                             <form class="d-flex" action="">
                                 <!-- el input-group es el que le da la propioedad de inlineblock -->
-                                <div class="input-group"> 
-                                    <input class="form-control mr-sm-2 search-bar-input" type="search" placeholder="encuentra lo que buscas" aria-label="Search">
-                                    <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i class="fas fa-search"></i></button>
-                                    <button type="reset" class="btn my-sm-0 cart-button" onclick="location.href='carrito.html'"><i class="fas fa-shopping-cart"></i></button>
-                                    <a class="nav-link hidden-980" >Cerrar sesion</a>
+                                <div class="input-group">
+                                    <input class="form-control mr-sm-2 search-bar-input" type="search"
+                                        placeholder="encuentra lo que buscas" aria-label="Search">
+                                    <button class="btn my-sm-0 search-button" data-mdb-ripple-color="dark"><i
+                                            class="fas fa-search"></i></button>
+                                    <button type="reset" class="btn my-sm-0 cart-button"
+                                        onclick="location.href='carrito.html'"><i
+                                            class="fas fa-shopping-cart"></i></button>
+                                    <a class="nav-link  cerrar">Cerrar sesion</a>
                                 </div>
                             </form>
                         </li>
@@ -81,116 +85,7 @@
 
     <!-- main ropa y calzado -->
     <div class="cards-div">
-
         <h3 class="offers-title">Perecederos y materias primas</h3>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="hipil">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="zapato">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="collar">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
-        <div class="card text-center" style="width: 18rem;">
-            <div class="card-body">
-                <img src="./Img/offers/madera.png" alt="">
-                <h5 class="card-title">Producto de perecederos y materias primas</h5>
-                <p class="card-text">Adquiérelo a un precio especial hoy. <br> Sujeto a existencias disponibles</p>
-                <p class="offers-price">$500</p>
-                <a href="./carrito.html" class="btn btn-primary btn-offers">Comprar</a>
-            </div>
-        </div>
     </div>
 
 
@@ -199,7 +94,8 @@
         <div>
             <ul>
                 <li class="footer-items">
-                    <a href="./nosotros.html" class="footer-link">Acerca de nosotros&nbsp;&nbsp;<i class="fas fa-user-tie"></i></a>
+                    <a href="./nosotros.html" class="footer-link">Acerca de nosotros&nbsp;&nbsp;<i
+                            class="fas fa-user-tie"></i></a>
                 </li>
                 <li class="footer-items">
                     <a href="mailto:info@mercadosmexico.mx" class="footer-link">Envíanos un correo &nbsp;<i
@@ -210,7 +106,8 @@
                             class="fas fa-user-secret"></i></a>
                 </li>
                 <li class="footer-items">
-                    <a class="footer-link" href="./registro.html">Regístrate&nbsp;&nbsp;<i class="fas fa-user-plus"></i></a>
+                    <a class="footer-link" href="./registro.html">Regístrate&nbsp;&nbsp;<i
+                            class="fas fa-user-plus"></i></a>
                 </li>
             </ul>
         </div>
@@ -225,5 +122,9 @@
         </div>
     </footer>
 </body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="js/carrito.js"></script>
+<script src="js/perecederos.js"></script>
+<script src="js/buscador.js"></script>
 
 </html>
