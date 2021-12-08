@@ -3,8 +3,8 @@ const formulario = document.getElementById('formulario');
 const credenciales = {
     email: 'usuario@gmail.com',
     password: 'root123456',
-    password_good: 'root',
-	email_good: 'admin'
+	email_good: 'admin@gmail.com',
+    password_good: 'root'
 }
 
 //Valida el formulario, falta validar el porque cuando pones el correcto da error. 
@@ -39,7 +39,7 @@ sesion = (e)=>{
         window.location = 'inicio.html'
     }else if(document.cookie=='superuser'){
         window.location = 'inicio-super.html'
-    }
+    } 
 }
 
 window.addEventListener('DOMContentLoaded',sesion);

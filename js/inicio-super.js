@@ -29,3 +29,11 @@ inicio = async (e)=>{
 }
 window.addEventListener('load',inicio)
 $cerrar.addEventListener('click',cerrarSesion)
+
+if (document.cookie == 'user') {
+  window.location = 'inicio.html'
+} else if (document.cookie == 'superuser') {
+  
+} else {
+  window.location = 'index.html'
+}
