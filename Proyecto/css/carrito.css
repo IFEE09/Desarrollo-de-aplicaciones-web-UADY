@@ -1,0 +1,39 @@
+
+
+/* ? SHOPPING CART */
+.shopping-cart{
+  height: 100vh;
+}
+.shopping-cart-items {
+  padding: 20px 0px;
+}
+
+.shopping-cart-header {
+  border-bottom: 1px solid #ccc;
+}
+
+.shopping-cart-image {
+  max-width: 20rem;
+  width: 10rem;
+  border-radius: 20px;
+}
+
+.shopping-cart-quantity-input {
+  max-width: 45px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #eee;
+  padding: 5px;
+}
+
+.shopping-cart-total {
+  min-height: 96px;
+}
+.total-price{
+  margin-right: 0.5rem;
+}
+@media screen and (max-width: 886px){
+  .shopping-cart-header h6{
+    font-size: 1rem;
+  }
+}
