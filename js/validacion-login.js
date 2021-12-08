@@ -9,8 +9,10 @@ const validar = () => {
 
 const credenciales = {
     email: 'usuario@gmail.com',
-    password: 'root123456',
-    password_good: /^.{8,50}$/, // 4 a 12 digitos.
+    password: 'usuario1234',
+    super_email: 'root@gmail.com',
+    super_password: 'admin1234',
+    password_good: /^.{8,28}$/, // 4 a 12 digitos.
 	email_good: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
 }
 
@@ -31,6 +33,13 @@ const validarFormulario = (event) => {
             } else {
                 campos['correo'] = false;
             }
+
+            if(credenciales.email_good.test(event.target.value)){
+                campos['super_correo'] = true;
+            } else {
+                campos['super_correo'] = false;
+            }
+
         break;
 
         case 'password':
@@ -39,12 +48,20 @@ const validarFormulario = (event) => {
             } else {
                 campos['password'] = false;
             }
+
+            if(credenciales.password_good.test(event.target.value)){
+                campos['super_password'] = true;
+            } else {
+                campos['super_password'] = false;
+            }
+
         break;
     }
 
 };
 
 function validarSesion(e){
+
     if(e.target.email.value === credenciales.email){
         campos['correo'] = true;
     } else {
@@ -54,7 +71,19 @@ function validarSesion(e){
     if(e.target.password.value ===  credenciales.password){
         campos['password'] = true;
     } else {
-        campos['password'] = true;
+        campos['password'] = false;
+    }
+
+    if(e.target.email.value === credenciales.super_email){
+        campos['super_correo'] = true;
+    } else {
+        campos['super_correo'] = false;
+    }
+
+    if(e.target.password.value ===  credenciales.password){
+        campos['super_password'] = true;
+    } else {
+        campos['super_password'] = false;
     }
 
 }
@@ -69,16 +98,23 @@ formulario.addEventListener('submit', (event) => {
     event.preventDefault();
 
     validarSesion(event);
-    if(campos.correo && campos.password){
+    if((campos.correo && campos.password) || (campos.super_correo && campos.super_password)){
         Swal.fire({
             icon: 'success',
             title: 'Inicio exitoso',
             text: 'Redirigiendo al inicio',
           });
 
-          setTimeout(() => {
-            window.location = 'inicio.html'
-        }, 3000);
+          if((campos.correo && campos.password)){
+            setTimeout(() => {
+                window.location = 'inicio.html'
+            }, 3000);
+          } else if ((campos.super_correo && campos.super_password)) {
+            setTimeout(() => {
+                window.location = 'inicio-super.html'
+            }, 3000);
+          }
+          
     } else {
         Swal.fire({
             icon: 'error',
@@ -86,5 +122,6 @@ formulario.addEventListener('submit', (event) => {
             text: 'Intente de nuevo',
           });
     }
+
 
 });
