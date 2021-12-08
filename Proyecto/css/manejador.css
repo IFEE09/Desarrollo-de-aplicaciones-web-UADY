@@ -284,6 +284,12 @@ input {
     text-align: center;
 }
 
+.categoria-form {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
 textarea {
     text-align: center;
     border: none;
@@ -292,7 +298,7 @@ textarea {
 
 select {
     margin: 5px 10px;
-    width: px;
+    text-align: center;
 }
 
 .categoria {
