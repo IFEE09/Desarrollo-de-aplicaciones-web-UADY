@@ -75,7 +75,7 @@ input[type="checkbox"]:focus {
     border-radius: 30px;
     background: linear-gradient(to top, #212429, rgb(107, 107, 105));
     width: 25%;
-    padding: 1.5vw;
+    padding: 0.5vw 1.5vw;
 }
 
 .login-box-primary a:hover {
